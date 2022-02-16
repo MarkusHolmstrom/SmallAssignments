@@ -1,11 +1,29 @@
 // AbsoluteDifference.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+
+
+
+// int numbers[] {1,2,3,4,5};
+// int(&ref)[5] = numbers;
+
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a;
+    int b;
+    cout << "Enter integer value A now!\n";
+    cin >> a;
+    cout << "A: " << a << "\n";
+    cout << "Enter integer value B now!\n";
+    cin >> b;
+    cout << "B: " << b << "\n";
+
+    
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
