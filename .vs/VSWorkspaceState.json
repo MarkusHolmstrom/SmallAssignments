@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AbsoluteDifference"
+    "\\AbsoluteDifference",
+    "\\CelsiusToFahrenheit",
+    "\\LastDigit"
   ],
-  "SelectedNode": "\\AbsoluteDifference\\AbsoluteDifference.vcxproj",
+  "SelectedNode": "\\LastDigit\\LastDigit.cpp",
   "PreviewInSolutionExplorer": false
 }
