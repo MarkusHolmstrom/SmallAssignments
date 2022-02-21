@@ -15,17 +15,37 @@ using namespace std;
 //    return 0;
 //}
 
+int lastDigit(int number) {
+    return number % 10;
+}
+
 int main()
 {
-    int numbers;
+    int digits;
+    int reverse = 0;
+    int rem;
+    int last;
     cout << "Enter number!\n";
-    cin >> numbers;
-
-
-
-    for (int value : numbers) {
-        cout << value " " << endl;
+    cin >> digits;
+    last = lastDigit(digits);
+    cout << "Last digit: " << last;
+    while (digits != 0)
+    {
+        rem = digits & 10;
+        reverse = reverse * 10 + rem;
+        digits /= 10;
     }
+
+
+    cout << "Digits in reverse order: " << rem << " " << digits;
+
+
+    string s;
+    cin >> s;
+
+    /*for (int value : numbers) {
+        cout << value " " << endl;
+    }*/
 
 }
 
