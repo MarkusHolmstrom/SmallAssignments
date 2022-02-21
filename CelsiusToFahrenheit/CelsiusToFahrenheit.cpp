@@ -22,7 +22,7 @@ double getFahrenheit(double celsius) {
 int main()
 {
     string input;
-    start:
+start:
     cout << "Celsius: \n";
     cin >> input;
     if (!isNumber(input))

@@ -7,7 +7,7 @@
 using namespace std;
 
 int getRandomNumber(int min, int max) {
-    return rand() & max + min;
+    return rand() % max + min;
 }
 
 // check if there is any letters in the input
@@ -40,7 +40,11 @@ start:
     int randNumber = getRandomNumber(0, 10);
     string guess;
     int guesses = 0;
-    cout << "Hello! Welcome to guessing game, your first guess?\n";
+    for (size_t i = 0; i < 10; i++)
+    {
+        cout << getRandomNumber(0, 10) << endl;
+    }
+    cout << "Hello! Welcome to guessing game between numbers 0 to 10, your first guess?\n";
 invalidGuess:
     cin >> guess;
     // Checks for invalid inputs
@@ -73,7 +77,7 @@ invalidGuess:
     }
     else
     {
-        cout << randNumber;
+        //cout << randNumber; //
         cout << "Incorrect, try again:\n";
         goto invalidGuess;
     }
