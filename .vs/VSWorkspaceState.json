@@ -3,9 +3,10 @@
     "",
     "\\AbsoluteDifference",
     "\\CelsiusToFahrenheit",
+    "\\EvenorOdd",
     "\\GuessGame",
     "\\LastDigit"
   ],
-  "SelectedNode": "\\GuessGame\\GuessGame.cpp",
+  "SelectedNode": "\\EvenorOdd\\EvenorOdd.cpp",
   "PreviewInSolutionExplorer": false
 }

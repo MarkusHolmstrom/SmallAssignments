@@ -22,7 +22,7 @@ bool isNumber(string str) {
 
 bool playAgain() {
     string inp;
-    cout << "Want to play again? (type 'y' for yay, 'n' for nay!)";
+    cout << "Want to play again? (type 'y' for yay, 'n' or anything else for nay!)\n";
     cin >> inp;
     if (inp == "y")
     {
@@ -37,13 +37,13 @@ bool playAgain() {
 int main()
 {
 start:
+    // random number to guess
     int randNumber = getRandomNumber(0, 10);
+    // input
     string guess;
+    // Counts the valid guesses
     int guesses = 0;
-    for (size_t i = 0; i < 10; i++)
-    {
-        cout << getRandomNumber(0, 10) << endl;
-    }
+
     cout << "Hello! Welcome to guessing game between numbers 0 to 10, your first guess?\n";
 invalidGuess:
     cin >> guess;
@@ -59,7 +59,7 @@ invalidGuess:
         cout << "Invalid number, min 0 and max 10!!!1!! \n";
         goto invalidGuess;
     }
-    // Correct guess counter
+    // Adds to the valid guess counter
     guesses++;
     // Correct number?
     if (i == randNumber)
@@ -77,7 +77,6 @@ invalidGuess:
     }
     else
     {
-        //cout << randNumber; //
         cout << "Incorrect, try again:\n";
         goto invalidGuess;
     }

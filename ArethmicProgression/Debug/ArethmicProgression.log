@@ -1,3 +1,3 @@
 ﻿  ArethmicProgression.cpp
-C:\Users\Marku\OneDrive\Dokument\GitHub\SmallAssignments\ArethmicProgression\ArethmicProgression.cpp(46,17): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Marku\OneDrive\Dokument\GitHub\SmallAssignments\ArethmicProgression\ArethmicProgression.cpp(44,17): warning C4018: '>=': signed/unsigned mismatch
   ArethmicProgression.vcxproj -> C:\Users\Marku\OneDrive\Dokument\GitHub\SmallAssignments\ArethmicProgression\Debug\ArethmicProgression.exe

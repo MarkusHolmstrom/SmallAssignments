@@ -21,6 +21,7 @@ int lastDigit(int number) {
 
 int main()
 {
+start:
     int digits;
     int reverse = 0;
     int rem;
@@ -28,7 +29,7 @@ int main()
     cout << "Enter number!\n";
     cin >> digits;
     last = lastDigit(digits);
-    cout << "Last digit: " << last;
+    cout << "Last digit: " << last << endl;
     while (digits != 0)
     {
         rem = digits & 10;
@@ -39,13 +40,8 @@ int main()
 
     cout << "Digits in reverse order: " << rem << " " << digits;
 
+    goto start;
 
-    string s;
-    cin >> s;
-
-    /*for (int value : numbers) {
-        cout << value " " << endl;
-    }*/
 
 }
 

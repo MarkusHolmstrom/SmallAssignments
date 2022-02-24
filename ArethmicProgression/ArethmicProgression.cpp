@@ -27,13 +27,11 @@ bool isArithmetic(vector<int> v) {
         if (i == 0 && v.size() > 1)
         {
             diff = abs(v.at(i) - v.at(1));
-            //cout << diff << endl;
         }
         else
         {
             if (diff == abs(prev - v.at(i))) 
             {
-            //cout << diff << " : " << prev << ", " << v.at(i);
                 counter++;
             }
             else
@@ -52,11 +50,16 @@ bool isArithmetic(vector<int> v) {
 
 int main()
 {
+start:
     vector<int> numbers{};
     int length;
-    cout << "Enter length of numbers!\n";
+    cout << "Enter the length of the series of numbers!\n";
     cin >> length;
-
+    if (length <= 1)
+    {
+        cout << "Uh uh ah, the series must be longer than that! (minimum of 2) \n";
+        goto start;
+    }
     int* array = new int[length];
 
     for (int i = 0; i < length; i++) {
@@ -74,7 +77,7 @@ int main()
     }
     else
     {
-        cout << "Series has NOOOOOOOOOO arithmetic progression at all, what the hell were you thinking????";
+        cout << "This series has NOOOOOOOOOO arithmetic progression at all, what the hell were you thinking????";
     }
 }
 
