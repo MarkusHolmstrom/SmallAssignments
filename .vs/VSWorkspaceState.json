@@ -5,8 +5,9 @@
     "\\CelsiusToFahrenheit",
     "\\EvenorOdd",
     "\\GuessGame",
-    "\\LastDigit"
+    "\\LastDigit",
+    "\\Palindrome"
   ],
-  "SelectedNode": "\\EvenorOdd\\EvenorOdd.cpp",
+  "SelectedNode": "\\CelsiusToFahrenheit\\CelsiusToFahrenheit.cpp",
   "PreviewInSolutionExplorer": false
 }

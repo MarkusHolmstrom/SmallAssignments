@@ -37,7 +37,7 @@ bool playAgain() {
 int main()
 {
 start:
-    // random number to guess
+    // create random number to guess
     int randNumber = getRandomNumber(0, 10);
     // input
     string guess;

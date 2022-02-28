@@ -30,8 +30,9 @@ start:
         cout << "Invalid input, (only) a number please!!!1!! \n";
         goto start;
     }
+    // convert input to double
     double celsius = stod(input);
-    cout << celsius << " degrees Celsius is " << getFahrenheit(celsius) << " degrees Fahrenheit";
-    cin >> input;
+    cout << celsius << " degrees Celsius is " << getFahrenheit(celsius) << " degrees Fahrenheit\n";
+    goto start;
 }
 
