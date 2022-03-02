@@ -1,14 +1,14 @@
-// CelsiusToFahrenheit.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
-#include <string> // https://www.programiz.com/cpp-programming/string-float-conversion string to double
+#include <string> 
 using namespace std;
 
 // check if there is any letters in the input
 bool isNumber(string str) {
     for (int i = 0; i < (int)str.length(); i++) {
-        if (!isdigit(str[i])) {
+        // Check if it is a number or dot (for double values)
+        if (!isdigit(str[i]) && str[i] != '.') {
+            cout << str[i] << endl;
             return false;
         }
     }
@@ -33,6 +33,7 @@ start:
     // convert input to double
     double celsius = stod(input);
     cout << celsius << " degrees Celsius is " << getFahrenheit(celsius) << " degrees Fahrenheit\n";
+    cout << "Restarting..." << endl;
     goto start;
 }
 

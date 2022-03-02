@@ -1,7 +1,6 @@
-// LargestNumber.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 template <class genType>
@@ -9,25 +8,38 @@ genType GetMax(genType a, genType b) {
     return (a > b ? a : b);
 }
 
+// check if there is any letters in the input (also in GuessGame)
+bool isNumber(string str) {
+    for (int i = 0; i < (int)str.length(); i++) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main()
 {
 start:
-    int a, b;
+    string first, second;
     cout << "Enter value A now!\n";
-    cin >> a;
-    if (cin.fail())
-    {
-        cout << "Invalid input, integers only!\n";
+    cin >> first;
+    if (!isNumber(first))
+    { 
+        cout << "Invalid input " << first << " for ValueA, integers only!\n";
         goto start;
     }
+    int a = stoi(first);
 b:
     cout << "Enter value B now!\n";
-    cin >> b;
-    if (cin.fail())
+    cin >> second;
+    if (!isNumber(second))
     {
-        cout << "Invalid input, integers only!\n";
+        cout << "Invalid input " << second << " for ValueB, integers only!\n";
         goto b;
     }
+    int b = stoi(second);
+
     auto largest = GetMax(a, b);
     if (largest == a && a != b)
     {

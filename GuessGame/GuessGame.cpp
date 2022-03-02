@@ -1,5 +1,3 @@
-// GuessGame.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 #include <string>
@@ -71,8 +69,7 @@ invalidGuess:
         }
         else
         {
-            string end;
-            cin >> end;
+            return 0;
         }
     }
     else

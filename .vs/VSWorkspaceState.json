@@ -5,7 +5,9 @@
     "\\CelsiusToFahrenheit",
     "\\EvenorOdd",
     "\\GuessGame",
+    "\\LargestNumber",
     "\\LastDigit",
+    "\\MinMaxSumAverage",
     "\\Palindrome"
   ],
   "SelectedNode": "\\CelsiusToFahrenheit\\CelsiusToFahrenheit.cpp",

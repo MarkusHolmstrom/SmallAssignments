@@ -1,8 +1,3 @@
-// AbsoluteDifference.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-// int numbers[] {1,2,3,4,5};
-// int(&ref)[5] = numbers;
 
 #include <iostream>
 
@@ -18,6 +13,7 @@ int getAbs(int i) {
 
 int main()
 {
+start:
     int a;
     int b;
     cout << "Enter integer value A now!\n";
@@ -30,5 +26,6 @@ int main()
     a = getAbs(a);
     b = getAbs(b);
     cout << "The absolute difference is " << a + b << "\n";
+    goto start;
 }
 
