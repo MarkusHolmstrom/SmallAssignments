@@ -40,7 +40,7 @@ b:
     }
     int b = stoi(second);
 
-    auto largest = GetMax(a, b);
+    int largest = GetMax(a, b);
     if (largest == a && a != b)
     {
         cout << "ValueA(" << largest << ") is higher than ValueB(" << b << ")\n";

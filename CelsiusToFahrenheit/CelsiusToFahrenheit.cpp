@@ -6,7 +6,7 @@ using namespace std;
 // check if there is any letters in the input
 bool isNumber(string str) {
     for (int i = 0; i < (int)str.length(); i++) {
-        // Check if it is a number or dot (for double values)
+        // Check if it is a number or dot (for double/flooat values)
         if (!isdigit(str[i]) && str[i] != '.') {
             cout << str[i] << endl;
             return false;

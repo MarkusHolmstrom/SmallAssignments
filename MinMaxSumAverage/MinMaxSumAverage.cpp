@@ -3,18 +3,14 @@
 using namespace std;
 
 void getOutput(int i, int number) {
-	if (i == 0)
-	{
-		cout << "{ ";
-	}
 	cout << number;
-	if (i == 4)
+	if (i != 4)
 	{
-		cout << " } \n";
+		cout << ", ";
 	}
 	else
 	{
-		cout << ", ";
+		cout << "\n";
 	}
 }
 
@@ -39,8 +35,8 @@ int main()
 start:
 	int numbers[5] = { 0, 0, 0, 0, 0 };
 	int sum = 0;
-	int min = INT16_MAX;
-	int max = INT16_MIN;
+	int min = INT_MAX;
+	int max = INT_MIN;
 	double average = 0;
 
     cout << "Insert 5 numbers!\n";
@@ -48,20 +44,21 @@ start:
 	{
 		cin >> numbers[i];
 	}
-	cout << "Numbers chosen: ";
+	// start print for the numbers
+	cout << "Numbers = ";
 	// lets do all the stuff in the same in for-loop
 	for (size_t i = 0; i < 5; i++)
 	{
 		// output
 		getOutput(i, numbers[i]);
-		// sum
+		// add to sum
 		sum += numbers[i];
 		// find min
 		min = getMin(min, numbers[i]);
 		// find max
 		max = getMax(max, numbers[i]);
 	}
-	average = sum / 5;
+	average = sum / static_cast<double>(5);
 	// print everything
 	cout << "Sum = " << sum << ", Minimum number = " << min << ", Highest number = " << max << ", Average = " << average << endl;
 	cout << "Restarting... " << endl;

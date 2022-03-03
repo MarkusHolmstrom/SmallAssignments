@@ -4,6 +4,7 @@ using namespace std;
 
 bool isPalindrome(string word) {
     for (int i = 0; i < word.size(); i++) {
+        // check if letters match (also capital letters)
         if (tolower(word[i]) != tolower(word[word.size() - i - 1])) {
             return false;
         }
